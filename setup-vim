@@ -1,0 +1,12 @@
+#!/bin/sh
+
+apt-get update
+apt-get install -y vim
+
+mkdir -p ~/.tmp
+git clone https://github.com/nanotech/jellybeans.vim/ ~/.tmp/jellybeans
+mkdir -p ~/.vim/colors
+cp ~/.tmp/jellybeans/colors/jellybeans.vim ~/.vim/colors/
+
+cp .vimrc ~/
+
